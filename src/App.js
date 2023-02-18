@@ -16,7 +16,7 @@ function App() {
                         <Route path="/" element={<Home />}></Route>
                         <Route path="/cart" element={<Cart />}></Route>
                     </Routes>
-                    <Home />
+                    <Home /> 
                 </BrowserRouter>
             </Provider>
         </div>
