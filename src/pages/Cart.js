@@ -10,6 +10,7 @@ const Cart = () => {
         dispatch(remove(productId));
     };
 
+
     return (
         <div>
             <h3>Cart</h3>
@@ -18,7 +19,8 @@ const Cart = () => {
                     <div key={product.id} className="cartCard">
                         <img src={product.image} alt="" />
                         <h5>{product.title}</h5>
-                        <h5>{product.price}</h5>
+
+                        <h5>{ (product.quantity>1)? product.price * product.quantity :product.price}</h5>
                         <h5>{product.quantity}</h5>
                         <button
                             className="btn"
